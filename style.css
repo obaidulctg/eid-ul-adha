@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+}
+
+.eid-title {
+  font-size: 3em;
+  animation: fadeInDown 1.5s ease;
+}
+
+.eid-message {
+  font-size: 1.2em;
+  margin-top: 20px;
+  animation: fadeInUp 2s ease;
+}
+
+.wish-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1em;
+  background: #ffb347;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wish-btn:hover {
+  background: #ffcc70;
+}
+
+.animation-container {
+  margin-top: 40px;
+  display: none;
+  animation: scaleUp 1.5s ease-in-out;
+}
+
+.moon-animation {
+  width: 200px;
+  animation: rotate 10s linear infinite;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+a {
+  color: #8fe3cf;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
